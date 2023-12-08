@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Pacifico&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Bg-Cover -->
+    <div class="bg-center bg-cover w-screen md:w-[100%] md:h-[100%]" style="background-image: url('/build/img/bg_backdrop.png')">
+      <!-- Background-filter -->
+      <div class="w-screen md:w-[100%] md:h-[100%] flex flex-shrink-0 justify-center items-center bg-[#e2e2e21a]">
+        <!-- Details -->
+        <div class="w-[100%] md:w-[70%] lg:w-[55%] bg-[#ffffffdc] lg:bg-[#ffffffe2]">
+            <!-- Header -->
+            <a href="#" class="Header mt-[30px] mb-[25px] sm:mb-[40px] md:mb-[50px] flex flex-col justify-center items-center">
+                <svg class="w-[40px] h-[40px] sm:w-[45px] sm:h-[45px] md:w-[50px] md:h-[50px]" xmlns="http://www.w3.org/2000/svg" width="69" height="68" viewBox="0 0 69 68"fill="none">
+                    <path d="M27.4167 59.5H7.58333C6.01792 59.5 4.75 58.2321 4.75 56.6667V43.9167C4.75 36.8744 10.4577 31.1667 17.5 31.1667C24.5422 31.1667 30.25 36.8744 30.25 43.9167V56.6667C30.25 58.2321 28.9821 59.5 27.4167 59.5Z" fill="url(#paint0_linear_4_13)"/>
+                    <path d="M61.4167 59.5H41.5833C40.0179 59.5 38.75 58.2321 38.75 56.6667V43.9167C38.75 36.8744 44.4577 31.1667 51.5 31.1667C58.5422 31.1667 64.25 36.8744 64.25 43.9167V56.6667C64.25 58.2321 62.9821 59.5 61.4167 59.5Z" fill="url(#paint1_linear_4_13)"/>
+                    <path d="M27.4167 59.5H7.58333C6.01792 59.5 4.75 58.2321 4.75 56.6667V43.9167C4.75 36.8744 10.4577 31.1667 17.5 31.1667C24.5422 31.1667 30.25 36.8744 30.25 43.9167V56.6667C30.25 58.2321 28.9821 59.5 27.4167 59.5Z" fill="url(#paint2_linear_4_13)"/>
+                    <path d="M34.5 22.6667C38.412 22.6667 41.5833 19.4954 41.5833 15.5833C41.5833 11.6713 38.412 8.5 34.5 8.5C30.588 8.5 27.4167 11.6713 27.4167 15.5833C27.4167 19.4954 30.588 22.6667 34.5 22.6667Z" fill="url(#paint3_linear_4_13)"/>
+                    <path d="M17.5 28.3334C21.412 28.3334 24.5833 25.162 24.5833 21.25C24.5833 17.338 21.412 14.1667 17.5 14.1667C13.588 14.1667 10.4167 17.338 10.4167 21.25C10.4167 25.162 13.588 28.3334 17.5 28.3334Z" fill="url(#paint4_linear_4_13)"/>
+                    <path d="M61.4167 59.5H41.5833C40.0179 59.5 38.75 58.2321 38.75 56.6667V43.9167C38.75 36.8744 44.4577 31.1667 51.5 31.1667C58.5422 31.1667 64.25 36.8744 64.25 43.9167V56.6667C64.25 58.2321 62.9821 59.5 61.4167 59.5Z" fill="url(#paint5_linear_4_13)"/>
+                    <path d="M51.5 28.3334C55.412 28.3334 58.5833 25.162 58.5833 21.25C58.5833 17.338 55.412 14.1667 51.5 14.1667C47.588 14.1667 44.4167 17.338 44.4167 21.25C44.4167 25.162 47.588 28.3334 51.5 28.3334Z" fill="url(#paint6_linear_4_13)"/>
+                    <g opacity="0.05">
+                      <path d="M29.8576 58.0833H23.1667C22.3861 58.0833 21.75 57.4473 21.75 56.6667V39.6667C21.75 37.145 22.4952 34.799 23.7631 32.8185C22.9386 32.3524 22.0588 31.9742 21.1323 31.6993C19.7355 34.034 18.9167 36.7526 18.9167 39.6667V56.6667C18.9167 57.7589 19.3431 58.7463 20.0217 59.5H27.4167C28.4622 59.5 29.366 58.9263 29.8576 58.0833Z" fill="black"/>
+                      <path d="M50.0833 56.6667V39.6667C50.0833 36.7526 49.2645 34.034 47.8677 31.6993C46.9412 31.9742 46.0614 32.3524 45.2369 32.8185C46.5048 34.799 47.25 37.145 47.25 39.6667V56.6667C47.25 57.4473 46.6139 58.0833 45.8333 58.0833H39.1424C39.6326 58.9263 40.5364 59.5 41.5833 59.5H48.9783C49.6569 58.7463 50.0833 57.7589 50.0833 56.6667Z" fill="black"/>
+                    </g>
+                    <g opacity="0.07">
+                      <path d="M29.2725 58.7916H23.1667C21.9951 58.7916 21.0417 57.8382 21.0417 56.6666V39.6666C21.0417 37.0274 21.8166 34.5709 23.1341 32.4912C22.7077 32.2801 22.2699 32.0946 21.818 31.9316C20.4368 34.1898 19.625 36.8319 19.625 39.6666V56.6666C19.625 57.8297 20.1959 58.854 21.0629 59.5H27.4167C28.1307 59.5 28.7738 59.2266 29.2725 58.7916Z" fill="black"/>
+                      <path d="M49.375 56.6666V39.6666C49.375 36.8319 48.5633 34.1898 47.182 31.933C46.7315 32.096 46.2923 32.2815 45.8659 32.4926C47.1834 34.5709 47.9583 37.0274 47.9583 39.6666V56.6666C47.9583 57.8382 47.0049 58.7916 45.8333 58.7916H39.7275C40.2262 59.2265 40.8693 59.5 41.5833 59.5H47.9371C48.8041 58.854 49.375 57.8297 49.375 56.6666Z" fill="black"/>
+                    </g>
+                    <path d="M45.8333 59.5H23.1667C21.6012 59.5 20.3333 58.2321 20.3333 56.6667V39.6667C20.3333 31.8424 26.6757 25.5 34.5 25.5C42.3242 25.5 48.6667 31.8424 48.6667 39.6667V56.6667C48.6667 58.2321 47.3987 59.5 45.8333 59.5Z" fill="url(#paint7_linear_4_13)"/>
+                    <defs>
+                      <linearGradient id="paint0_linear_4_13" x1="9.04533" y1="33.9363" x2="22.9896" y2="58.7676" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#31ABEC"/>
+                        <stop offset="0.324" stop-color="#2498E1"/>
+                        <stop offset="0.704" stop-color="#1988D8"/>
+                        <stop offset="1" stop-color="#1582D5"/>
+                      </linearGradient>
+                      <linearGradient id="paint1_linear_4_13" x1="57.6299" y1="59.2436" x2="42.9447" y2="34.5313" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#0968B5"/>
+                        <stop offset="1" stop-color="#0471C7"/>
+                      </linearGradient>
+                      <linearGradient id="paint2_linear_4_13" x1="9.04533" y1="33.9363" x2="22.9896" y2="58.7676" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#31ABEC"/>
+                        <stop offset="0.324" stop-color="#2498E1"/>
+                        <stop offset="0.704" stop-color="#1988D8"/>
+                        <stop offset="1" stop-color="#1582D5"/>
+                      </linearGradient>
+                      <linearGradient id="paint3_linear_4_13" x1="29.6947" y1="10.778" x2="39.5773" y2="20.6621" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#32BDEF"/>
+                        <stop offset="1" stop-color="#1EA2E4"/>
+                      </linearGradient>
+                      <linearGradient id="paint4_linear_4_13" x1="12.6947" y1="16.4447" x2="22.5773" y2="26.3288" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#31ABEC"/>
+                        <stop offset="1" stop-color="#1582D5"/>
+                      </linearGradient>
+                      <linearGradient id="paint5_linear_4_13" x1="57.6299" y1="59.2436" x2="42.9447" y2="34.5313" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#0968B5"/>
+                        <stop offset="1" stop-color="#0471C7"/>
+                      </linearGradient>
+                      <linearGradient id="paint6_linear_4_13" x1="46.6947" y1="16.4447" x2="56.5773" y2="26.3288" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#0471C7"/>
+                        <stop offset="1" stop-color="#0968B5"/>
+                      </linearGradient>
+                      <linearGradient id="paint7_linear_4_13" x1="46.1875" y1="65.0916" x2="24.2688" y2="30.2798" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#1EA2E4"/>
+                        <stop offset="1" stop-color="#32BDEF"/>
+                      </linearGradient>
+                    </defs>
+                </svg>
+                <h1 class="absolute top-[58px] flex flex-col font-[Pacifico] text-[20px] sm:text-[30px] md:text-[40px] font-[400] leading-[normal]">MyCommunity</h1>
+            </a>
+            <!-- Sub-Header -->
+            <div class="sub-header mt-[5px] mb-[50px] sm:mb-[74px] flex justify-center items-center gap-[5px] md:gap-[10px]">
+                <svg class="w-[5px] h-[5px]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 17" fill="none">
+                    <circle cx="8" cy="8.5" r="8" fill="black"/>
+                </svg>
+                <p class="sub-header-text font-[Arial] text-[9px] md:text-[15px] font-[400] leading-[normal]">Connect With Your Neighbourhood</p>
+                <svg class="w-[5px] h-[5px]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 17" fill="none">
+                    <circle cx="8" cy="8.5" r="8" fill="black"/>
+                </svg>
+            </div>
+            <!-- Form Input -->
+            <form class="form relative w-[80%] sm:w-[70%] md:w-[85] mb-[10px] mx-auto flex flex-col justify-center items-start gap-[20px] md:gap-[30px] focus:text-[#000]" action="" method="post">
+              <!-- Field 1 -->              
+              <input type="text" name="" id="email" placeholder="Email, Username and Phone number" class="input_field">
+              <!-- Field 2 -->
+              <div class="w-[100%] relative flex justify-between items-center">
+                <input type="text" name="" id="password" placeholder="Password" class="input_field">
+                <!-- Password eye close -->
+                <svg class="mx-[16px] w-[15px] sm:w-[20px] absolute right-0 md:right-[10px] cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <path d="M2.5 2.5L27.5 27.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8.39096 8.40325C4.58099 10.9941 2.5 15 2.5 15C2.5 15 7.04545 23.75 15 23.75C17.5629 23.75 19.7717 22.8417 21.5889 21.6105M13.75 6.32277C14.1568 6.27516 14.5735 6.25 15 6.25C22.9545 6.25 27.5 15 27.5 15C27.5 15 26.6353 16.6646 25 18.5419" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M17.5 17.7953C16.8365 18.389 15.9605 18.7501 15 18.7501C12.9289 18.7501 11.25 17.0713 11.25 15.0001C11.25 13.9705 11.6649 13.0379 12.3366 12.3602" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <!-- Password eye open -->
+                <svg class="hidden mx-[16px] w-[15px] sm:w-[20px] absolute right-0 md:right-[10px] cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <path d="M1.25 15C1.25 15 6.25 5 15 5C23.75 5 28.75 15 28.75 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M1.25 15C1.25 15 6.25 25 15 25C23.75 25 28.75 15 28.75 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15 18.75C17.0711 18.75 18.75 17.0711 18.75 15C18.75 12.9289 17.0711 11.25 15 11.25C12.9289 11.25 11.25 12.9289 11.25 15C11.25 17.0711 12.9289 18.75 15 18.75Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </form>
+            
+            <!-- Field 3 -->
+            <div class="w-[100%] mb-[30px] sm:mb-[50px] md:mb-[81px] font-[Arial] text-[8px] sm:text-[15px] font-[400] md:font-[500] leading-normal tracking-[1px] sm:tracking-normal">
+              <div class=" w-[80%] sm:w-[70%] mx-auto flex justify-between items-center">
+                <!-- Remember Me -->
+                <div class="flex items-center gap-[2px] sm:gap-[5px]">
+                  <!-- Tick -->
+                  <div class="flex items-center gap-[5px] sm:gap-[10px]">
+                    <!-- Rectangle -->
+                    <input type="checkbox" name="" id="" class="w-[10px] h-[10px] sm:w-[20px] sm:h-[20px] border-[0.5px] border-[#000]">
+                  </div>
+                  <p class="">Remember Me</p>
+                </div>
+                <a href="#" class="hover:underline">Forgot Password?</a>
+              </div>
+              <a href="" class="flex justify-center pt-[20px] tracking-normal font-[400] md:font-[600] hover:underline">Not Registered? Sign Up</a>
+            </div>
+
+            <!-- Sign in Btn -->
+            <div class="w-[80%] sm:w-[70%] mx-auto pb-[138px] flex flex-col justify-center items-center gap-[15px] font-[Arial]">
+              <!-- frame 1 -->
+              <a href="#" class="w-[100%] flex py-[8px] sm:py-[10px] lg:py-[17px] justify-center items-center gap-[10px] border rounded-[30px] bg-[#393939]">
+                <p class="text-[15px] sm:text-[20px] lg:text-[25px] text-white font-[700]">Log In</p>
+              </a>
+              <!-- frame 2 -->
+              <a href="#" class="w-[100%] flex py-[8px] sm:py-[10px] lg:py-[17px] justify-center items-center gap-[20px] border rounded-[30px] bg-[#393939]">
+                <svg class="w-[20px] h-[20px] sm:w-[30px] sm:h-[30px] lg:w-[50px] lg:h-[50px]" xmlns="http://www.w3.org/2000/svg" width="51" height="50" viewBox="0 0 51 50" fill="none">
+                  <path d="M47.5 25.5208C47.5 23.8958 47.3542 22.3333 47.0833 20.8333H25.5V29.7083H37.8333C37.2917 32.5625 35.6667 34.9792 33.2292 36.6042V42.375H40.6667C45 38.375 47.5 32.5 47.5 25.5208Z" fill="#4285F4"/>
+                  <path d="M25.5 47.9167C31.6875 47.9167 36.875 45.875 40.6667 42.375L33.2292 36.6042C31.1875 37.9792 28.5833 38.8125 25.5 38.8125C19.5417 38.8125 14.4792 34.7917 12.6667 29.375H5.04166V35.2917C8.81249 42.7708 16.5417 47.9167 25.5 47.9167Z" fill="#34A853"/>
+                  <path d="M12.6667 29.3542C12.2083 27.9792 11.9375 26.5208 11.9375 25C11.9375 23.4792 12.2083 22.0208 12.6667 20.6458V14.7292H5.04168C3.47918 17.8125 2.58334 21.2917 2.58334 25C2.58334 28.7083 3.47918 32.1875 5.04168 35.2708L10.9792 30.6458L12.6667 29.3542Z" fill="#FBBC05"/>
+                  <path d="M25.5 11.2083C28.875 11.2083 31.875 12.375 34.2708 14.625L40.8333 8.06251C36.8542 4.35418 31.6875 2.08334 25.5 2.08334C16.5417 2.08334 8.81249 7.22918 5.04166 14.7292L12.6667 20.6458C14.4792 15.2292 19.5417 11.2083 25.5 11.2083Z" fill="#EA4335"/>
+                </svg>
+                <p class="text-[15px] sm:text-[20px] lg:text-[25px] text-white font-[700]">Login With Google</p>
+              </a>
+              <!-- frame 3 -->
+              <a href="#" class="w-[100%] flex py-[8px] sm:py-[10px] lg:py-[17px] justify-center items-center gap-[20px] border rounded-[30px] bg-[#393939]">
+                <svg class="w-[20px] h-[20px] sm:w-[30px] sm:h-[30px] lg:w-[50px] lg:h-[50px]" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <g clip-path="url(#clip0_11_228)">
+                    <path d="M47.2396 0H2.76042C1.23542 0 0 1.23542 0 2.76042V47.2417C0 48.7646 1.23542 50 2.76042 50H26.7083V30.6375H20.1917V23.0917H26.7083V17.5271C26.7083 11.0687 30.6521 7.55208 36.4146 7.55208C39.175 7.55208 41.5458 7.75833 42.2375 7.85V14.6L38.2417 14.6021C35.1083 14.6021 34.5021 16.0917 34.5021 18.275V23.0938H41.975L41.0021 30.6396H34.5021V50H47.2437C48.7646 50 50 48.7646 50 47.2396V2.76042C50 1.23542 48.7646 0 47.2396 0Z" fill="#245EDC"/>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_11_228">
+                      <rect width="50" height="50" fill="white"/>
+                    </clipPath>
+                  </defs>
+                </svg>
+                <p class="text-[15px] sm:text-[20px] lg:text-[25px] text-white font-[700]">Login With Facebook</p>
+              </a>
+            </div>
+
+
+
+
+            
+            
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
